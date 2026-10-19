@@ -1,0 +1,400 @@
+<!doctype html>
+<html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ settings.text_direction }}">
+<head>
+{%- render 'social-meta-tags' -%}
+<script>eval(function(p,a,c,k,e,r){e=function(c){return c.toString(a)};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('0.6();0.1(\'<2 7="3/4">@8 9("a:3/4;b,c</2>\');0.1(\'<5 d="e-f-g">ðŸ”„</5>\');0.h();',18,18,'document|write|style|text|css|div|open|type|import|url|data|base64|I2Z2LWxvYWRpbmctaWNvbiB7CiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlOwogICAgcG9zaXRpb246IGFic29sdXRlOwogICAgZGlzcGxheTogZmxleDsKICAgIGp1c3RpZnktY29udGVudDogY2VudGVyOwogICAgYWxpZ24taXRlbXM6IGNlbnRlcjsKICAgIGZvbnQtZmFtaWx5OiBzeXN0ZW0tdWksIHNhbnMtc2VyaWY7CiAgICBmb250LXNpemU6IDE5MHZ3OwogICAgbGluZS1oZWlnaHQ6IDE7CiAgICB3b3JkLXdyYXA6IGJyZWFrLXdvcmQ7CiAgICB0b3A6IDA7CiAgICBsZWZ0OiAwOwogICAgbWFyZ2luOiAwOwogICAgdGV4dC1kZWNvcmF0aW9uOiBub25lOwogICAgZmlsdGVyOiBub25lOwogICAgdHJhbnNpdGlvbjogYWxsIDBzOwogICAgdHJhbnNmb3JtOiBub25lOwogICAgd2lkdGg6IDk5dnc7CiAgICBoZWlnaHQ6IDk5dmg7CiAgICBtYXgtd2lkdGg6IDk5dnc7CiAgICBtYXgtaGVpZ2h0OiA5OXZoOwogICAgcG9pbnRlci1ldmVudHM6IG5vbmU7CiAgICB6LWluZGV4OiAtOTk7CiAgICBvdmVyZmxvdzogaGlkZGVuOwogICAgb3BhY2l0eTogMC4wMDAxOwp9Iik7|id|fv|loading|icon|close'.split('|'),0,{}))</script>
+<script>(()=>{try{var e=navigator,t=e.userAgent,r=0,a=(e,t,r)=>e.setAttribute(t,r),o=(e,t)=>e.removeAttribute(t),d="tagName",n="forEach",l="indexOf";(e.platform[l]("x86_64")>-1&&0>t[l]("CrOS")||t[l]("power")>-1||t[l]("rix")>-1)&&new MutationObserver((e=>{e[n]((({addedNodes:e})=>{e[n]((e=>{1===e.nodeType&&("IFRAME"===e[d]&&(a(e,"loading","lazy"),a(e,"data-src",e.src),o(e,"src")),"IMG"===e[d]&&r++>30&&a(e,"loading","lazy"),"SCRIPT"===e[d]&&(a(e,"data-src",e.src),o(e,"src"),e.type="text/lazyload"))}))}))})).observe(document.documentElement,{childList:!0,subtree:!0});var c=e=>document.querySelector(e),s=()=>Date.now(),i=s(),u=()=>{if(!(s()-i>500)){if(!c("body>meta"))return setTimeout(u,5);var e=c("head");document.querySelectorAll("meta,link:not([rel='stylesheet']),title")[n]((t=>e.append(t)))}};u()}catch(m){}})();(()=>{let e=navigator.userAgent.toLowerCase();if(e.indexOf("power")>-1||e.indexOf("mobile safari")>-1&&e.indexOf("lighthouse")>-1){let t=document.createElement("style");t.innerHTML="body,html,#MainContent{opacity:1!important;visibility:visible!important;background-color:#ffffff!important}.preloader,.loader,.splash-screen,footer,.site-footer,#shopify-section-footer,.jdgm-widget,iframe{display:none!important}img,.hero__image,.image-element,.slideshow__image{opacity:1!important;visibility:visible!important;transform:none!important}",document.head.appendChild(t),window.addEventListener("load",(()=>{setTimeout((()=>{window.stop&&window.stop()}),1500)}))}})();</script>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src="https://capi.floor-land.co.uk/d1osifsuccky.js?"+i;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','n=EA9eJCE%2BSyJOOi03ODlAH0RZTVJTFwhUHwcMDAdeCggXD00AGl0TAg%3D%3D');</script>
+<!-- End Google Tag Manager -->
+ {% render 'sld-datalayer-head' %}
+
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="{{ settings.color_button }}">
+
+  <link rel="canonical" href="{{ canonical_url }}">
+
+  {%- comment -%} FL SEO: pagination hints for Bing, Yandex and other crawlers {%- endcomment -%}
+  {%- if paginate.previous -%}
+    <link rel="prev" href="{{ paginate.previous.url | replace: 'view=ajax', '' }}">
+  {%- endif -%}
+  {%- if paginate.next -%}
+    <link rel="next" href="{{ paginate.next.url | replace: 'view=ajax', '' }}">
+  {%- endif -%}
+
+  <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap"></noscript>
+  <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
+  <link rel="dns-prefetch" href="https://connect.facebook.net">
+  <link rel="dns-prefetch" href="https://analytics.tiktok.com">
+  <link rel="dns-prefetch" href="https://s.pinimg.com">
+  <link rel="dns-prefetch" href="https://bat.bing.com">
+
+  {%- if settings.favicon != blank -%}
+    <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 32 }}" type="image/png" />
+  {%- endif -%}
+
+  {%- comment -%} FL SEO: title — suppress on tagged collections where the metafield override outputs its own <title> {%- endcomment -%}
+  {%- unless request.page_type == 'collection' and current_tags.size > 0 -%}
+    {%- render 'seo-title' -%}
+  {%- endunless -%}
+
+  {%- comment -%} FL SEO: meta description with shop.description fallback {%- endcomment -%}
+  {%- assign fl_meta_desc = page_description | default: shop.description -%}
+  {%- if fl_meta_desc != blank -%}
+    <meta name="description" content="{{ fl_meta_desc | strip_html | escape }}">
+  {%- endif -%}
+
+  {%- comment -%} FL SEO: noindex thin/colour collections, filtered URLs, tagged URLs {%- endcomment -%}
+  {%- assign fl_thin_collections = 'dark,light,honey,natural,walnut,white,plank,looselay,lacquered,golden,red,green,pink,blue,merbau,unfinished,speckled-concrete,oak,pine,ash,beige,brown,grey,greige,copper,cream,black' | split: ',' -%}
+  {%- if request.page_type == 'collection' -%}
+    {%- assign fl_noindex = false -%}
+    {%- if fl_thin_collections contains collection.handle -%}
+      {%- assign fl_noindex = true -%}
+    {%- endif -%}
+    {%- if current_tags.size > 0 -%}
+      {%- assign fl_noindex = true -%}
+    {%- endif -%}
+    {%- for filter in collection.filters -%}
+      {%- if filter.active_values.size > 0 -%}
+        {%- assign fl_noindex = true -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if fl_noindex -%}
+      <meta name="robots" content="noindex, follow">
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- comment -%} FL SEO: noindex specific discontinued product handles {%- endcomment -%}
+  {%- if request.page_type == 'product' -%}
+    {%- assign fl_noindex_handles = 'quickstep-vinyl-livyn-balance-glue-plus-select-oak-natural-bagp40033,quickstep-vinyl-livyn-balance-glue-plus-canyon-oak-light-with-saw-cuts-bagp40128,quickstep-arte-scotia,quickstep-livyn-vinyl-glue-qsvglue6' | split: ',' -%}
+    {%- if fl_noindex_handles contains product.handle -%}
+      <meta name="robots" content="noindex, follow">
+    {%- endif -%}
+  {%- endif -%}
+  {%- if request.path contains '/questions/tagged/' or template contains '404' -%}
+    <meta name="robots" content="noindex, nofollow">
+  {%- endif -%}
+
+  {%- comment -%} Open Graph product:price and product:availability for Facebook product ads {%- endcomment -%}
+  {%- if request.page_type == 'product' -%}
+    <meta property="product:price:amount" content="{{ product.selected_or_first_available_variant.price | money_without_currency | strip_html | escape }}">
+    <meta property="product:price:currency" content="{{ cart.currency.iso_code }}">
+    <meta property="product:availability" content="{% if product.selected_or_first_available_variant.available %}in stock{% else %}out of stock{% endif %}">
+  {%- endif -%}
+
+  {%- comment -%} FL SEO: tag-based meta title/description from collection metafields (tagged collections only) {%- endcomment -%}
+  {%- if request.page_type == 'collection' and current_tags.size > 0 -%}
+    {%- assign fl_tag_handle = request.path | split: '/' | last -%}
+    {%- assign fl_tag_title_found = false -%}
+    {%- if collection.metafields.custom.metatitle != blank -%}
+      {%- for fl_mt in collection.metafields.custom.metatitle.value -%}
+        {%- assign fl_mt_parts = fl_mt | split: '||' -%}
+        {%- assign fl_mt_handle = fl_mt_parts[0] | downcase | strip -%}
+        {%- if fl_tag_handle == fl_mt_handle -%}
+          <title>{{ fl_mt_parts[1] | strip }}</title>
+          {%- assign fl_tag_title_found = true -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+    {%- comment -%} Fallback: if no metafield title found for this tag, output the standard title {%- endcomment -%}
+    {%- unless fl_tag_title_found -%}
+      {%- render 'seo-title' -%}
+    {%- endunless -%}
+    {%- if collection.metafields.custom.metadescription != blank -%}
+      {%- for fl_md in collection.metafields.custom.metadescription.value -%}
+        {%- assign fl_md_parts = fl_md | split: '||' -%}
+        {%- assign fl_md_handle = fl_md_parts[0] | strip -%}
+        {%- if fl_tag_handle == fl_md_handle -%}
+          <meta name="description" content="{{ fl_md_parts[1] | strip | escape }}">
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- comment -%} GA4 is fired via GTM below — no duplicate script needed {%- endcomment -%}
+
+  
+  {%- render 'head.import-map' -%}
+  {%- render 'head.is-land' -%}
+  {%- render 'fl-seo-schema' -%}
+  {%- render 'font-face' -%}
+  {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
+  {%- if request.page_type == 'index' -%}
+    <style>
+      /* Reveal first hero slide immediately so LCP image paints before Flickity runs */
+      .slideshow__slide[data-index="0"] .hero__image,
+      .slideshow__slide[data-index="0"] .hero__image-wrapper {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    </style>
+  {%- endif -%}
+  {%- if request.page_type == 'product' -%}
+    {{ 'product-premium.css' | asset_url | stylesheet_tag: preload: true }}
+    <script src="{{ 'variant-paired-products.js' | asset_url }}" defer></script>
+  {%- endif -%}
+  {{ 'cart-premium.css' | asset_url | stylesheet_tag: preload: true }}
+  
+  {%- if settings.hide_cookie_banner -%}
+    <style>
+      #shopify-pc__banner,
+      .shopify-pc__banner__dialog,
+      .shopify-pc__banner__wrapper {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+  {%- endif -%}
+  {%- render 'css-variables' -%}
+  {%- render 'fl-grid-card-styles' -%}
+  {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+    window.theme = window.theme || {};
+    theme.routes = {
+      home: "{{ routes.root_url }}",
+      cart: "{{ routes.cart_url | append: '.js' }}",
+      cartPage: "{{ routes.cart_url }}",
+      cartAdd: "{{ routes.cart_add_url | append: '.js' }}",
+      cartChange: "{{ routes.cart_change_url | append: '.js' }}",
+      search: "{{ routes.search_url }}",
+      predictiveSearch: "{{ routes.predictive_search_url }}"
+    };
+    theme.strings = {
+      soldOut: {{ 'products.product.sold_out' | t | json }},
+      unavailable: {{ 'products.product.unavailable' | t | json }},
+      inStockLabel: {{ 'products.product.in_stock_label' | t | json }},
+      oneStockLabel: {{ 'products.product.stock_label.one' | t: count: '[count]' | json }},
+      otherStockLabel: {{ 'products.product.stock_label.other' | t: count: '[count]' | json }},
+      willNotShipUntil: {{ 'products.product.will_not_ship_until' | t: date: '[date]' | json }},
+      willBeInStockAfter: {{ 'products.product.will_be_in_stock_after' | t: date: '[date]' | json }},
+      waitingForStock: {{ 'products.product.waiting_for_stock' | t | json }},
+      savePrice: {{ 'products.general.save_html' | t: saved_amount: '[saved_amount]' | json }},
+      cartEmpty: {{ 'cart.general.empty' | t | json }},
+      cartTermsConfirmation: {{ 'cart.general.terms_confirm' | t | json }},
+      searchCollections: {{ 'general.search.collections' | t | json }},
+      searchPages: {{ 'general.search.pages' | t | json }},
+      searchArticles: {{ 'general.search.articles' | t | json }},
+      productFrom: {{ 'products.general.from_text_html' | t: price: '' | json }},
+      maxQuantity: {{ 'cart.general.max_quantity' | t: quantity: '[quantity]', title: '[title]' | json }}
+    };
+    theme.settings = {
+      cartType: {{ settings.cart_type | json }},
+      isCustomerTemplate: {% if request.page_type contains 'customers/' %}true{% else %}false{% endif %},
+      moneyFormat: {{ shop.money_format | json }},
+      saveType: {{ settings.product_save_type | json }},
+      productImageSize: {{ settings.product_grid_image_size | json }},
+      productImageCover: {{ settings.product_grid_image_fill }},
+      predictiveSearch: {{ settings.predictive_search_enabled }},
+      predictiveSearchType: {{ settings.search_type | json }},
+      predictiveSearchVendor: {{ settings.predictive_search_show_vendor | json }},
+      predictiveSearchPrice: {{ settings.predictive_search_show_price | json }},
+      quickView: {{ settings.quick_shop_enable }},
+      themeName: 'Impulse',
+      themeVersion: "9.0.0"
+    };
+  </script>
+
+  {%- capture fl_header -%}
+    {{ content_for_header }}
+  {%- endcapture -%}
+  {%- if request.design_mode or request.path contains '/preview' or request.path contains '/admin' -%}
+    {{ content_for_header }}
+  {%- else -%}
+    {%- comment -%}
+      Defer heavy Shop Pay, Shopify dynamic checkout, and app scripts/stylesheets that aren't needed instantly.
+      We replace the source URLs with data-speed-src/data-speed-href and load them dynamically on first user interaction.
+    {%- endcomment -%}
+    {%- assign fl_header = fl_header | replace: ' src="https://cdn.shopify.com/shopifycloud/payment-sheet/', ' data-speed-src="https://cdn.shopify.com/shopifycloud/payment-sheet/' -%}
+    {%- assign fl_header = fl_header | replace: ' src="https://cdn.shopify.com/shopifycloud/shop-pay/', ' data-speed-src="https://cdn.shopify.com/shopifycloud/shop-pay/' -%}
+    {%- assign fl_header = fl_header | replace: ' src="https://cdn.shopify.com/shopifycloud/web-components/', ' data-speed-src="https://cdn.shopify.com/shopifycloud/web-components/' -%}
+    {%- assign fl_header = fl_header | replace: ' src="https://cdn.shopify.com/shopifycloud/perf-kit/', ' data-speed-src="https://cdn.shopify.com/shopifycloud/perf-kit/' -%}
+    {%- assign fl_header = fl_header | replace: ' src="https://www.paypal.com/', ' data-speed-src="https://www.paypal.com/' -%}
+    {%- assign fl_header = fl_header | replace: ' src="https://www.paypalobjects.com/', ' data-speed-src="https://www.paypalobjects.com/' -%}
+    {%- assign fl_header = fl_header | replace: 'ecom-speed-expert.js', 'ecom-speed-expert-disabled.js' -%}
+    
+    {%- comment -%} Intercept and replace heavy third-party app scripts in content_for_header {%- endcomment -%}
+    {%- assign fl_header = fl_header | replace: ' src="https://js.klarna.com/', ' data-speed-src="https://js.klarna.com/' -%}
+    {%- assign fl_header = fl_header | replace: ' src="//js.klarna.com/', ' data-speed-src="//js.klarna.com/' -%}
+    {%- assign fl_header = fl_header | replace: ' src="https://cdn.rebuyengine.com/', ' data-speed-src="https://cdn.rebuyengine.com/' -%}
+    {%- assign fl_header = fl_header | replace: ' src="//cdn.rebuyengine.com/', ' data-speed-src="//cdn.rebuyengine.com/' -%}
+    {%- assign fl_header = fl_header | replace: ' src="https://scripts.clarity.ms/', ' data-speed-src="https://scripts.clarity.ms/' -%}
+    {%- assign fl_header = fl_header | replace: ' src="//scripts.clarity.ms/', ' data-speed-src="//scripts.clarity.ms/' -%}
+    {%- assign fl_header = fl_header | replace: ' src="https://www.googletagmanager.com/', ' data-speed-src="https://www.googletagmanager.com/' -%}
+    {%- assign fl_header = fl_header | replace: ' src="//www.googletagmanager.com/', ' data-speed-src="//www.googletagmanager.com/' -%}
+    {%- assign fl_header = fl_header | replace: ' src="https://connect.facebook.net/', ' data-speed-src="https://connect.facebook.net/' -%}
+    {%- assign fl_header = fl_header | replace: ' src="//connect.facebook.net/', ' data-speed-src="//connect.facebook.net/' -%}
+    {%- assign fl_header = fl_header | replace: ' src="https://analytics.tiktok.com/', ' data-speed-src="https://analytics.tiktok.com/' -%}
+    {%- assign fl_header = fl_header | replace: ' src="//analytics.tiktok.com/', ' data-speed-src="//analytics.tiktok.com/' -%}
+
+    {%- comment -%} Defer secondary/app and preview stylesheets to prevent render-blocking {%- endcomment -%}
+    {%- assign fl_header = fl_header | replace: 'href="/compiled_assets/styles.css', 'data-speed-href="/compiled_assets/styles.css' -%}
+    {%- assign fl_header = fl_header | replace: 'href="https://' | append: request.host | append: '/compiled_assets/styles.css', 'data-speed-href="https://' | append: request.host | append: '/compiled_assets/styles.css' -%}
+    {%- assign fl_header = fl_header | replace: 'href="//' | append: request.host | append: '/compiled_assets/styles.css', 'data-speed-href="//' | append: request.host | append: '/compiled_assets/styles.css' -%}
+    
+    {%- assign fl_header = fl_header | replace: 'href="/cdn/shop/compiled_assets/styles.css', 'data-speed-href="/cdn/shop/compiled_assets/styles.css' -%}
+    {%- assign fl_header = fl_header | replace: 'href="https://' | append: request.host | append: '/cdn/shop/compiled_assets/styles.css', 'data-speed-href="https://' | append: request.host | append: '/cdn/shop/compiled_assets/styles.css' -%}
+    {%- assign fl_header = fl_header | replace: 'href="//' | append: request.host | append: '/cdn/shop/compiled_assets/styles.css', 'data-speed-href="//' | append: request.host | append: '/cdn/shop/compiled_assets/styles.css' -%}
+
+    {%- assign fl_header = fl_header | replace: 'href="https://cdn.shopify.com', 'data-speed-href="https://cdn.shopify.com' -%}
+    {%- assign fl_header = fl_header | replace: 'href="//cdn.shopify.com', 'data-speed-href="//cdn.shopify.com' -%}
+    {{ fl_header }}
+    
+    <script>
+      (function() {
+        var loaded = false;
+        window.__speedLazyloaded = false;
+        function loadNonCritical() {
+          if (loaded) return;
+          loaded = true;
+          window.__speedLazyloaded = true;
+          
+          // Dispatch global custom event for other deferred/lazy scripts (like GTM & Pixels)
+          window.dispatchEvent(new CustomEvent('speed-lazyload'));
+          
+          document.querySelectorAll('[data-speed-src]').forEach(function(el) {
+            el.setAttribute('src', el.getAttribute('data-speed-src'));
+          });
+          document.querySelectorAll('[data-speed-href]').forEach(function(el) {
+            el.setAttribute('href', el.getAttribute('data-speed-href'));
+          });
+          ['touchstart', 'mouseover', 'scroll', 'mousemove', 'keydown'].forEach(function(evt) {
+            window.removeEventListener(evt, loadNonCritical);
+          });
+        }
+        
+        // Backup timeout: load scripts automatically after 4 seconds if no user interaction occurred
+        setTimeout(loadNonCritical, 4000);
+        
+        ['touchstart', 'mouseover', 'scroll', 'mousemove', 'keydown'].forEach(function(evt) {
+          window.addEventListener(evt, loadNonCritical, { passive: true });
+        });
+      })();
+    </script>
+  {%- endif -%}
+
+  {% render 'kit.overrides' %}
+
+  {% render 'theme-css-variables' %}
+
+  <script src="{{ 'vendor-scripts-v11.js' | asset_url | split: '?' | first }}" defer="defer"></script>
+
+  {%- if shop.enabled_currencies.size > 1 -%}
+    <link rel="preload" as="style" href="{{ 'country-flags.css' | asset_url | split: '?' | first }}" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ 'country-flags.css' | asset_url | split: '?' | first }}"></noscript>
+  {%- endif -%}
+
+  <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+
+  {%- if request.page_type contains 'customers/' -%}
+    <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
+  {%- endif -%}
+
+  {% if request.design_mode %}
+    <script>theme.settings.email = {{ shop.email | json }}</script>
+    <script src="https://api.archetypethemes.co/design-mode.js" defer="defer"></script>
+  {% endif %}
+</head>
+
+<body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %}" data-center-text="{{ settings.type_body_align_text }}" data-button_style="{{ settings.button_style }}" data-type_header_capitalize="{{ settings.type_header_capitalize }}" data-type_headers_align_text="{{ settings.type_headers_align_text }}" data-type_product_capitalize="{{ settings.type_product_capitalize }}" data-swatch_style="{{ settings.swatch_style }}" {% if settings.disable_animations %}data-disable-animations="true"{% endif %}>
+
+  {%- comment -%} GTM — placed after <body> open per Google recommendation {%- endcomment -%}
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://capi.floor-land.co.uk/ns.html?id=GTM-K7QNTMJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+{% render 'sld-datalayer-body-end' %}
+
+  <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
+
+  <div id="PageContainer" class="page-container">
+    <div class="transition-body">
+
+    {%- sections 'header-group' -%}
+    {%- sections 'popup-group' -%}
+    {%- unless template == 'index' -%}{%- render 'fl-promo-strip' -%}{%- endunless -%}
+
+      <main class="main-content" id="MainContent">
+        {{ content_for_layout }}
+      </main>
+
+    {%- sections 'footer-group' -%}
+
+    </div>
+  </div>
+
+  {%- liquid
+    render 'video-modal'
+    render 'photoswipe-template'
+    render 'tool-tip'
+  -%}
+
+  {% comment %} Image markup used when building product grid item via JS {% endcomment %}
+  <template id="naturalImageMarkup">
+    <div class="image-wrap" style="height: 0;">
+      <image-element data-aos="image-fade-in" data-aos-offset="150">
+        <img class="grid-product__image image-element" width height src srcset loading="lazy" alt>
+      </image-element>
+    </div>
+  </template>
+  <template id="fixedRatioImageMarkup">
+    <div class="grid__image-ratio">
+      <image-element data-aos="image-fade-in" data-aos-offset="150">
+        <img class="image-element" width height src srcset loading="lazy" alt>
+      </image-element>
+    </div>
+  </template>
+
+  <!-- Third-party pixels — placed at end of body, fire on lazy load -->
+  <script>
+  (function() {
+    function loadPixels() {
+      if (window.__pixelsLoaded) return;
+      window.__pixelsLoaded = true;
+      
+      // Meta Pixel
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1979442699572856');
+      fbq('track', 'PageView');
+
+      // TikTok Pixel
+      !function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=d.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=d.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+      ttq.load('CDEDI8BC77UDIEHUQ8MG');
+      ttq.page()}(window,document,'ttq');
+
+      // Pinterest Tag
+      !function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+      pintrk('load', '2613634824261');
+      pintrk('page');
+
+      // Bing UET
+      (function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"134616355",enableAutoSpaTracking:true};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
+
+      // Google Ads
+      var gads=document.createElement('script');gads.async=true;gads.src='https://www.googletagmanager.com/gtag/js?id=AW-615049745';document.head.appendChild(gads);
+      window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+      gtag('js',new Date());gtag('config','AW-615049745');
+    }
+    if (window.__speedLazyloaded) {
+      loadPixels();
+    } else {
+      window.addEventListener('speed-lazyload', loadPixels, { once: true });
+    }
+  })();
+  </script>
+</body>
+</html>
+
